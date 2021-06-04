@@ -1,0 +1,255 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  color: #3f5463;
+  background-image: url("https://freepngimg.com/thumb/cloud/91952-and-square-photography-wallpaper-computer-black-monochrome.png"),
+
+    linear-gradient(
+      355deg,
+      rgba(255, 236, 194, 1) 0%,
+      rgba(250, 223, 255, 1) 30%,
+      rgba(208, 205, 255, 1) 47.5%,
+      rgba(202, 202, 255, 1) 65%,
+      rgba(164, 204, 255, 1) 82.5%,
+      rgba(166, 240, 255, 1) 100%
+    );
+  background-repeat: no-repeat;
+  background-position: 85% 30%;
+  scroll-snap-type: y mandatory;
+}
+
+.page {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+#navbar {
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  padding-top: 12px;
+  padding-bottom: 4px;
+  padding-right: 16px;
+  background-image: linear-gradient(155deg,#a6ebffaa,#a4d5ffaa);
+  z-index: 999;
+}
+
+#navbar a {
+  font-family: "Josefin Slab", serif;
+  font-size: 20px;
+  text-align: right;
+  text-decoration: none;
+  color: #3f5463;
+  padding: 5px;
+}
+#navbar a:hover {
+  font-weight: bold;
+  text-shadow: 0px 0px 3px rgb(202, 202, 255);
+}
+#navbar a:active {
+  font-weight: bold;
+}
+
+#footer {
+  color: #e3d5ff;
+  background-image: url("https://i.imgur.com/6NsbDJv.png");
+  background-size: cover;
+  height: 120px;
+  width : 100%;
+  position: fixed;
+  bottom: -3px;
+  margin: 0;
+  z-index: 0;
+}
+.byline {
+  font-family: "Homemade Apple", cursive;
+  position: fixed;
+  right: 10px;
+  bottom: -4px;
+}
+
+#welcome-section h3, /*   */
+h4 {
+  font-family: "Homemade Apple", cursive;
+}
+
+#welcome-section h4 {
+  text-align: right;
+  margin-top: 0px;
+}
+#welcome-section h1 { /*  */
+  font-family: "Josefin Slab", serif;
+  text-align: right;
+  font-size: 64px;
+  margin-top: 0px;
+}
+
+.welcome-container {
+  min-width: 200px;
+  max-width: 400px;
+  padding: 30vh 25vw;
+}
+
+#projects {
+  padding: 5vh 0;
+}
+h2 {
+  margin: 0;
+}
+.project-container {
+  padding: 20px;
+  height: 80%;
+  width: 85%;
+  display: block;
+  margin: auto;
+  background: #ffffff50;
+  overflow: scroll;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2px;
+}
+
+.column {
+  flex: 32%;
+  min-width: 48%;
+  max-width: 48%;
+  padding: 0 6px;
+}
+.project-tile {
+  display: block;
+
+}
+img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  opacity: 1;
+  transition: 0.25s ease;
+  backface-visibility: hidden;
+  z-index: 3;
+}
+
+img:hover,
+img:focus {
+  z-index: 1;
+  opacity: 0.2;
+}
+
+.img-text {
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 0px 0px 3px rgb(202, 202, 255);
+  position: relative;
+  top: 40px;
+  right: -15px;
+  z-index: 2;
+}
+
+.contact-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding-top: 30vh;
+}
+#contact h1 {
+  font-family: "Josefin Slab", serif;
+  font-size: 56px;
+}
+#contact h2 {
+  font-family: "Homemade Apple", cursive;
+  text-align: right;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #3f5463;
+}
+
+.contact-buttons {
+  text-align: center;
+  font-size: 42px; 
+}
+
+@media screen and (max-width: 768px) { /* Phone and tablet */
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-height: 700px ) { /* Phone */
+  html, body {
+      scroll-snap-type: none;
+}
+
+.page {
+  scroll-snap-align: none;
+
+  }
+  .welcome-container {
+    padding: 20vh 20vw;
+}
+  #contact {
+    height: 80vh;
+  }
+  #contact h1 {
+  font-size: 36px;
+}
+  #contact h2 {
+  font-size: 20px;
+}
+  
+  .contact-buttons {
+   font-size: 32px; 
+}
+  .contact-container {
+    max-width: 90vw;
+  }
+  #footer {
+    position: relative;
+    bottom: 0px;
+
+  }
+  .byline {
+    text-align: right;
+    position: relative;
+    bottom: -80px;
+    right: 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) { /* Large desktop */
+  #navbar {
+    background-image: none;
+  }
+  #navbar a {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  #footer {
+    background-size: cover;
+    height: 150px;
+    bottom: -3px;
+  }
+  .project-container {
+  padding: 20px;
+  height: 80%;
+  width: 80%;
+  max-width: 960px;
+  }
+  .column {
+  flex: 32%;
+  min-width: 30%;
+  max-width: 31%;
+  padding: 0 6px;
+}
+}
