@@ -1,0 +1,340 @@
+:root {
+  --title-font: "Amatic SC", cursive;
+  --text-font: "Raleway", sans-serif;
+  --dark-grey: rgb(76, 83, 103);
+  --mid-grey: rgb(138, 146, 168);
+  --light-grey: rgb(211, 214, 222);
+  --orange-yellow: rgb(255, 196, 0);
+  --bg-dark-grey: rgba(76, 83, 103, 0.90);
+  --bg-mid-grey: rgba(138, 146, 168, 0.90);
+  --bg-light-grey: rgb(211, 214, 222, 0.9);
+  --bg-orange-yellow: rgb(255, 196, 0, 0.9);
+}
+html {
+  background-color: rgb(255, 196, 0, 0.15);
+}
+body {
+  font-size: medium;
+  background-image: linear-gradient(
+      155deg,
+      rgba(252, 189, 0, 0.1),
+      rgba(252, 189, 0, 0.1)
+    ),
+    url(file:///home/lucy/Documents/CreagMhor/images/16-bed-view.jpg);
+  background-repeat: no-repeat;
+  background-size: 900px;
+  background-attachment: fixed;
+  background-position: 50% 35%;
+  position: relative;
+  /* width: 100%; */
+  margin: 0px;
+  /*   top: 0; */
+  /*   left: -10px; */
+  background-color: var(--bg-light-greylight-grey);
+}
+/*https://www.walkhighlands.co.uk/lochlomond/2_2/2_2_1l.JPG*/
+h2,
+p {
+  font-family: var(--text-font);
+}
+a,
+a:active,
+a:visited,
+.availability-button:active,
+.availability-button:visited {
+  max-width: max-content;
+  text-decoration: none;
+  color: var(--dark-grey);
+}
+
+a:hover,
+a:focus,
+.availability-button:hover,
+.availability-button:focus {
+  font-weight: bold;
+  color: var(--dark-grey);
+}
+
+#navbar,
+#footer {
+  width: 100%;
+  background-color: var(--orange-yellow);
+  /*   border: 2px groove var(--mid-grey); */
+  box-shadow: 0px 0px 5px var(--mid-grey);
+  font-family: var(--title-font);
+  color: var(--mid-grey);
+}
+#navbar {
+  height: 3em;
+  display: inline-flex;
+  position: fixed;
+  z-index: 999;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navlink {
+  margin: auto 10px;
+  font-size: 22px;
+}
+
+#welcome,
+#contact-target {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 4em 0px;
+  margin: 0;
+  background-image: linear-gradient(
+      155deg,
+      rgba(252, 189, 0, 0.1),
+      rgba(252, 189, 0, 0.1)
+    ),
+    url(file:///home/lucy/Documents/CreagMhor/images/16-bed-view.jpg);
+  background-repeat: no-repeat;
+  background-size: 900px;
+  background-attachment: fixed;
+  background-position: 50% 35% ;/*0 45px;*/
+  font-family: var(--title-font);
+  color: white;
+  font-size: 24px;
+  text-shadow: -0.5px -0.5px var(--orange-yellow),-0.5px 0.5px var(--orange-yellow),0.5px -0.5px var(--orange-yellow),0.5px 0.5px var(--orange-yellow);
+}
+#contact-target {
+  font-family: var(--title-font);
+  /* background-image: 
+    /* linear-gradient(155deg, rgba(15, 29, 156, 0.35), rgba(252, 189, 0, 0.35), rgba(15, 29, 156, 0.35)),  url(file:///home/lucy/Documents/CreagMhor/images/16-bed-view-small.jpg); */
+}
+
+#welcome-text {
+  max-width: 900px;
+  display: block;
+  margin: auto;
+  padding: 3em;
+  padding-bottom: 0;
+}
+
+#welcome-text h4 {
+  display: block;
+  margin: auto;
+  text-align: right;
+  max-width: max-content;
+}
+#welcome-text h1 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.lg-container {
+  background-color: var(--bg-light-grey);
+  width: 100%;
+  padding: 6em 0;
+}
+#info,
+#about {
+  display: block;
+  margin: auto;
+  max-width: 860px;
+  color: var(--dark-grey);
+  padding: 0 20px;
+}
+#info {
+
+  max-width: max-content;
+}
+
+.svg-icon {
+  width: 40px;
+  height: auto;
+  background-color: var(--mid-grey);
+  padding: 4px;
+  /*border: 1px solid var(--orange-yellow);*/
+  border-radius: 5px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.feature p {
+  margin: 0 1em;
+}
+
+#gallery {
+  text-align: center;
+  background-color: var(--bg-dark-grey);
+  padding: 4em 0px;
+  font-size: 24px;
+  font-family: var(--text-font);
+}
+.gallery-container {
+  max-height: 500px;
+  overflow: scroll;
+  display: block;
+  margin: auto;
+  max-width: 1000px;
+  /* border: 2px solid var(--orange-yellow);
+  background-color: var(--bg-mid-grey); */
+}
+#gallery img {
+  width: 200px;
+  margin: 10px 10px;
+  border: 2px solid var(--light-grey);
+}
+#gallery img:hover {
+  transition: 0.2s;
+  transform: scale(1.05);
+}
+
+#about h2 {
+  text-align: right;
+}
+#about p {
+  text-align: justify;
+}
+li {
+  list-style-type: disc;
+  font-family: var(--text-font);
+}
+#contact {
+  display: block;
+  margin: auto;
+  max-width: 900px;
+}
+#contact-text {
+  display: block;
+  max-width: 75vw;
+}
+.yellow-box {
+  margin: auto;
+
+  background-color: var(--orange-yellow);
+  opacity: 95%;
+  color: var(--dark-grey);
+  font-size: 16px;
+  padding: 30px;
+  border-radius: 2px;
+}
+.yellow-box p {
+  margin: 0px;
+}
+#contact-form {
+  display: block;
+  margin: 5em auto 0 auto;
+  width: min-content;
+  padding: 1em;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-group {
+  margin: 1em 0;
+
+}
+
+label {
+  font-size: 22px;
+}
+
+.form-opt {
+  font-family: var(--text-font);
+  font-size: 14px;
+
+}
+
+
+#submit {
+  margin-top: 1em;
+  font-family: var(--title-font);
+  color: var(--dark-grey);
+  background: var(--orange-yellow);
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid white;
+  opacity: 100%;
+}
+#contact-target a {
+  text-decoration: underline;
+}
+
+.input-box {
+  width: 250px;
+  font-family: var(--text-font);
+  color: black;
+}
+#extra-info {
+  height: 120px;
+}
+#footer p {
+  text-align: right;
+  padding: 20px;
+  margin: 0px;
+  font-family: var(--title-font);
+}
+.elfsight-app-4a7379c7-484f-4e30-ba38-d261baf8e9c7 {
+  font-family: var(--text-font);
+  margin-top: 2em;
+}
+
+.widget {
+  display: block;
+  margin: 0 auto;
+  font-family: var(--title-font);
+  text-align: center;
+
+
+}
+
+.widget_input {
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+  margin: 4px;
+  max-width: 300px;
+  font-family: var(--text-font);
+}
+
+/* .check-availability {
+  border: 2px solid white !important;
+} */
+
+.datepicker-top-left,
+.datepicker-top-right {
+  transition: none;
+}
+
+.availability-button {
+  text-align: center;
+  margin: 3em auto 0 auto; /* 3em auto; */
+  padding: 20px;
+  width: 168px;
+  background: var(--orange-yellow);
+  color: var(--dark-grey);
+  border: 2px solid white;
+  font-family: var(--title-font);
+  font-size: 24px;
+}
+
+@media screen and (min-width: 900px) {
+  #info .feature-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
+  #info .feature {
+    width: 301px;
+
+  }
+
+  #contact-text {
+    max-width: 740px;
+  }
+}
